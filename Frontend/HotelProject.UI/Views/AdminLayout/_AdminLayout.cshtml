@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<partial name="/Views/AdminLayout/HeadPartial.cshtml" />
+<body>
+    <partial name="/Views/AdminLayout/PreloaderPartial.cshtml" />        
+    <div id="main-wrapper">       
+        <partial name="/Views/AdminLayout/NavHeaderPartial.cshtml" />
+
+        <partial name="/Views/AdminLayout/HeaderPartial.cshtml" />    
+        
+        <partial name="/Views/AdminLayout/SidebarPartial.cshtml" />
+        <div class="content-body">
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <partial name="/Views/AdminLayout/FooterPartial.cshtml" />
+        </div>
+
+    
+    <partial name="/Views/AdminLayout/ScriptPartial.cshtml" />
+    
+
+</body>
+
+</html>

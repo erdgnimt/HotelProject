@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+<vc:dashboard-head></vc:dashboard-head>
+<vc:dashboard-widget></vc:dashboard-widget>
+<div class="container-fluid mt-3">
+    <vc:dashboard-last-four-staff-list></vc:dashboard-last-four-staff-list>
+    <vc:dashboard-last-six-booking-list></vc:dashboard-last-six-booking-list>   
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="social-graph-wrapper widget-facebook">
+                    <a href="https://tr-tr.facebook.com/">
+                        <span class="s-icon"><i class="fa fa-facebook"></i></span>
+                    </a>
+                </div>               
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">                
+                <div class="social-graph-wrapper widget-linkedin">
+                    <a href="https://www.linkedin.com/">
+                    <span class="s-icon"><i class="fa fa-linkedin"></i></span>
+                    </a>
+                </div>               
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="social-graph-wrapper widget-googleplus">
+                    <a href="https://www.google.com.tr/">                    
+                    <span class="s-icon"><i class="fa fa-google-plus"></i></span>
+                    </a>
+                </div>               
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="social-graph-wrapper widget-twitter">
+                    <a href="https://www.twitter.com">
+                        <span class="s-icon"><i class="fa fa-twitter"></i></span>
+                        </a>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<vc:dashboard-scripts></vc:dashboard-scripts>   

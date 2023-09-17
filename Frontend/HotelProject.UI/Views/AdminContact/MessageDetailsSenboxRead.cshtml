@@ -1,0 +1,30 @@
+﻿@model ReadInboxMessageDetailsDTO;
+@{
+    ViewData["Title"] = "MessageDetailsRead";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="email-left-box">
+    <a href="/AdminContact/AddSendMessage/" class="btn btn-primary btn-block">Yeni Mesaj Oluştur</a>
+    <partial name="/Views/AdminContact/SideBarAdminContactPartial.cshtml" />        
+</div>
+<div class="email-right-box">    
+<div class="read-content">
+    <div class="media pt-5">
+        <img class="mr-3 rounded-circle" src="~/adminweb/images/avatar/1.jpg">
+        <div class="media-body">
+            <h5 class="m-b-3">@Model.ReceiverName</h5>
+        </div>
+    </div>
+    <hr>
+    <div class="media mb-4 mt-1">
+        <div class="media-body">
+                <span class="float-right">@(((DateTime)Model.Date).ToString("dd-MMM-yyyy"))</span>
+            <h4 class="m-0 text-primary">@Model.Title</h4><small class="text-muted">Kime:@Model.ReceiverMail</small>
+        </div>
+    </div>
+    <h5 class="m-b-15">Hi,Ingredia,</h5>
+    <p>@Model.Content</p>    
+    <hr>     
+</div>
+</div>
